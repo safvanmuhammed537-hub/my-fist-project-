@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title> muhammed safvan pp  — data science </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1F2430;
+    --paper:#EFEFEA;
+    --paper-2:#E4E3DC;
+    --indigo:#2B3A67;
+    --mustard:#C9962C;
+    --line: rgba(31,36,48,0.15);
+    box-sizing:border-box;
+    padding-top: env(safe-area-inset-top,0px);
+    padding-bottom: env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#EFEFEA;
+      --paper:#181B22;
+      --paper-2:#20242E;
+      --indigo:#8B9DD9;
+      --mustard:#E0B255;
+      --line: rgba(239,239,234,0.15);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#EFEFEA;
+    --paper:#181B22;
+    --paper-2:#20242E;
+    --indigo:#8B9DD9;
+    --mustard:#E0B255;
+    --line: rgba(239,239,234,0.15);
+  }
+  html{scroll-padding-top: env(safe-area-inset-top,0px);}
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.5;
+  }
+  a{color:inherit;}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px;}
+
+  header{
+    padding:56px 0 40px;
+    border-bottom:1px solid var(--line);
+  }
+  .nameplate{
+    font-family:'Fraunces',serif;
+    font-size:clamp(2.4rem,6vw,3.6rem);
+    font-weight:600;
+    letter-spacing:-0.01em;
+    margin:0 0 6px;
+  }
+  .role{
+    font-size:1.05rem;
+    color:var(--indigo);
+    margin:0 0 20px;
+  }
+  nav{display:flex;gap:24px;font-size:0.95rem;}
+  nav a{text-decoration:none;border-bottom:1px solid transparent;}
+  nav a:hover, nav a:focus-visible{border-bottom-color:currentColor;}
+
+  section{padding:48px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  h2{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:1.5rem;
+    margin:0 0 24px;
+  }
+  .intro p{max-width:60ch;font-size:1.08rem;}
+
+  .work-item{
+    display:grid;
+    grid-template-columns: 140px 1fr;
+    gap:20px;
+    padding:22px 0;
+    border-top:1px solid var(--line);
+  }
+  .work-item:first-of-type{border-top:none;}
+  .work-year{color:var(--indigo);font-size:0.92rem;padding-top:2px;}
+  .work-title{font-weight:600;margin:0 0 6px;font-size:1.08rem;}
+  .work-desc{margin:0;max-width:56ch;color:var(--ink);opacity:0.85;}
+  .work-tag{
+    display:inline-block;
+    margin-top:10px;
+    font-size:0.85rem;
+    color:var(--mustard);
+  }
+
+  .about-grid{display:grid;grid-template-columns:1fr;gap:16px;max-width:60ch;}
+  .about-grid p{margin:0;}
+
+  footer{padding:40px 0 64px;}
+  .contact-line{
+    font-family:'Fraunces',serif;
+    font-size:clamp(1.4rem,4vw,2rem);
+    margin:0 0 16px;
+  }
+  .contact-links{display:flex;gap:20px;flex-wrap:wrap;font-size:0.98rem;}
+  .contact-links a{text-decoration:underline;text-decoration-color:var(--line);}
+
+  @media (max-width:560px){
+    .work-item{grid-template-columns:1fr;}
+    .work-year{order:-1;}
+  }
+
+  :focus-visible{outline:2px solid var(--indigo);outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important;transition:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <p class="nameplate">Muhammed safvan</p>
+    <p class="role">Data Engineer — interfaces for financial tools</p>
+    <nav>
+      <a href="#work">Student </a>
+      <a href="#about">About : </a>
+      <a href="#contact">Contact : 7510673710</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <p>I analyze data to help businesses make informed decisions. Ten years in, I still spend most of my time on the unglamorous parts: form validation, error states, the moment right after someone hits submit.</p>
+  </section>
+
+  <section id="work">
+    <h2>Selected work</h2>
+
+    <div class="work-item">
+      <div class="work-year">2025</div>
+      <div>
+        <p class="work-title">Ledger — expense tracking for freelancers</p>
+        <p class="work-desc">Redesigned the core entry flow to cut average time-to-log from 40 seconds to 12. Led research, IA, and the visual system.</p>
+        <span class="work-tag">Case study on request</span>
+      </div>
+    </div>
+
+    <div class="work-item">
+      <div class="work-year">2023–24</div>
+      <div>
+        <p class="work-title">Northbank — small business lending platform</p>
+        <p class="work-desc">Built the design system used across the application, underwriting, and servicing products. Shipped a dark mode used by 40% of active users within a quarter.</p>
+      </div>
+    </div>
+
+    <div class="work-item">
+      <div class="work-year">2021–22</div>
+      <div>
+        <p class="work-title">Fieldwork — internal tools for claims adjusters</p>
+        <p class="work-desc">Moved a 20-year-old desktop tool onto the web without losing the muscle memory of daily users. Ran contextual research in six regional offices.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about-grid">
+      <p>I trained as an industrial designer before moving into software, which is probably why I still think in terms of tolerances and wear. I care about how an interface holds up on someone's worst day, not just their first one.</p>
+      <p>Based in Lisbon. I work with small product teams, usually 2–3 month engagements, occasionally longer.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p class="contact-line">Say hello.</p>
+    <div class="contact-links">
+      <a href="mailto:hello@safvanmuhammed537@gmail.com
+      .example">hello@muhammed safvan.example</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Reading notes</a>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
